@@ -59,6 +59,19 @@ bb(cycle_hubs)
 names(cycle_hubs)
 use_data(cycle_hubs)
 
+#Download Cycle Parking locations
+
+u = "https://data.gov.uk/dataset/gm-cycle-parking/datapackage.zip"
+download.file(url = u, destfile = "datapackage.zip")
+unzip("datapackage.zip")
+unzip("data/Cycle_Parking.zip")
+cycle_parking = read_shape("SHP-format/Cycle_Parking_font_point.shp")
+qtm(cycle_parking)
+bb(cycle_parking)
+cycle_hubs = set_projection(cycle_parking, projection = "longlat")
+bb(cycle_parking)
+names(cycle_parking)
+use_data(cycle_parking)
 
 # route network from pct.bike
 u = "https://cdn.rawgit.com/npct/pct-data/17700f6/greater-manchester/rnet.Rds"

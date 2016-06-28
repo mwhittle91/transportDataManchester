@@ -6,7 +6,9 @@ library(devtools)
 pkgs = c(
   "tmap",
   "sp",
-  "stplanr"
+  "stplanr",
+  "OpenStreetMap",
+  "mapview"
 )
 
 for(i in pkgs){
@@ -44,3 +46,15 @@ unlink(c("SHP-format", "datapackage.zip",
          "KML-format", "TAB-format", "datapackage.json"),
        recursive = T)
 
+# route network from pct.bike
+u = "https://cdn.rawgit.com/npct/pct-data/17700f6/greater-manchester/rnet.Rds"
+download.file(u, "/tmp/rnet.Rds")
+rnet = readRDS("/tmp/rnet.Rds")
+plot(rnet)
+use_data(rnet)
+
+u = "https://cdn.rawgit.com/npct/pct-data/17700f6/greater-manchester/l.Rds"
+download.file(u, "/tmp/desire_lines.Rds")
+desire_lines = readRDS("/tmp/desire_lines.Rds")
+plot(desire_lines)
+use_data(desire_lines)

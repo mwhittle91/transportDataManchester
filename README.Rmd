@@ -1,0 +1,45 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-"
+)
+```
+
+This is a package to ease the access and analysis of open transport data in Manchester. It comes pre-installed with some datasets and automatically installs some useful software for visualising spatial data on your computer.
+
+## Pre-requisites
+
+Recent versions of R (which can be downloaded [here](https://www.r-project.org/)) and [RStudio](https://www.rstudio.com/products/rstudio/download/).
+
+This is free software that works on Linux, Mac and Windows.
+
+It is suggested you get up-to-speed with RStudio, for example with reference to this tutorial: https://github.com/Robinlovelace/Creating-maps-in-R (Lovelace et al. 2014)
+
+## Installation
+
+Open RStudio and enter the following, to install the 'devtools' package:
+
+```{r, eval=FALSE}
+install.packages("devtools")
+```
+
+Then you can install this package:
+
+```{r, eval=FALSE}
+devtools::install_github("robinlovelace/transportDataManchester")
+```
+
+## Using the package
+
+
+
+## References
+
+Lovelace, R., & Cheshire, J. (2014). Introduction to visualising spatial data in R.

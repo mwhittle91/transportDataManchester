@@ -65,6 +65,44 @@ qtm(osm_tiles) +
   tm_lines(col = "Year opened", palette = "Spectral")
 ```
 
+## Further data resources
+
+There are many open data resources available, in addition to the `cycle_routes` dataset included in the package:
+
+## Cycle data
+
+- Data from the Propensity to Cycle Tool: http://www.pct.bike/
+
+- Cycle routes (this is where the `cycle_routes` dataset pre-installed in this package is from): https://data.gov.uk/dataset/gm-cycle-routes
+
+- Cycle hubs: https://data.gov.uk/dataset/gm-cycle-hubs
+
+- Cycle lockers: https://data.gov.uk/dataset/gm-cycle-lockers
+
+- Cycle parking: https://data.gov.uk/dataset/gm-cycle-parking
+
+- Bike shops: https://data.gov.uk/dataset/cycle-shops
+
+### Other TfGM data
+
+- GM Traffic Signal Locations : https://data.gov.uk/dataset/traffic-signal-locations
+
+- Greater Manchester Road Casualty Statistics: https://data.gov.uk/dataset/greater-manchester-road-casualty-statistics
+
+- Metrolink Stops and Rail Stations: https://data.gov.uk/dataset/metrolink-and-rail-stations
+
+- GM Public Transport Schedule – GTFS: https://data.gov.uk/dataset/public-transport-schedules-gtfs
+
+- Car Parks - http://developer.tfgm.com/ (requires registration) (also, note that this will be replaced by a new live system soon but the concept will be the same so can be used on a Proof of Concept basis)
+
+### External data - Air Quality
+
+- Air Quality Management Areas - https://uk-air.defra.gov.uk/aqma/maps
+
+- Great Air Manchester - http://www.greatairmanchester.org.uk/GreatAir/default.aspx
+
+- Air Quality England - http://www.airqualityengland.co.uk/
+
 ## References
 
 Lovelace, R., & Cheshire, J. (2014). Introduction to visualising spatial data in R.

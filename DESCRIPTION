@@ -9,4 +9,6 @@ License: What license is it under?
 LazyData: TRUE
 Imports: tmap,
     sp,
-    stplanr
+    stplanr,
+    OpenStreetMap,
+    mapview
